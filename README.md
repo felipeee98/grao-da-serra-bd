@@ -46,4 +46,3 @@ A conexão entre a interface e o banco de dados foi realizada utilizando Python 
 
 `python interface.py`
 
-A conta de acesso fornecida destina-se exclusivamente à demonstração local do projeto.
