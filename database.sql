@@ -158,6 +158,7 @@ INSERT INTO item_pedido (id_pedido, id_produto, quantidade, preco_unitario) VALU
  
 -- Valor total dos pedidos já pagos (soma dos itens; sem desconto,
 -- pois são anteriores ao programa de fidelidade).
+SET SQL_SAFE_UPDATES = 0;
 UPDATE pedido p
    SET p.valor_total = (SELECT SUM(i.quantidade * i.preco_unitario)
                           FROM item_pedido i
